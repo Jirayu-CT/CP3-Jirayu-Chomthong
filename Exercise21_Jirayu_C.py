@@ -1,7 +1,7 @@
 from tkinter import *
 import math
 
-def leftClickButton(event):
+def LeftClickButton(event):
     hight = int(textBoxHight.get())
     weight = int(textBoxWeigth.get())
 
@@ -35,7 +35,7 @@ textBoxWeigth.grid(column=1, row=1)
 
 calculateButton = Button(main, text = "คำนวณ")
 calculateButton.grid(column=0, row=2)
-calculateButton.bind('<Button-1>', leftClickButton)
+calculateButton.bind('<Button-1>', LeftClickButton)
 
 labelResult = Label(main, text="ผลลัพธ์")
 labelResult.grid(column=1, row=2)
